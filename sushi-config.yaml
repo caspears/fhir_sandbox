@@ -22,13 +22,15 @@ publisher:
 
 
 dependencies:
-    hl7.fhir.us.core:
-        version: 7.0.0
-        uri: "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
-        id: uscore
-        reason: |
-            Where possible, all profiles in this IG are either derived from US Core 7.0.0 or aligned with that release and future releases as much as possible. U.S. Core also sets expectations for a variety of referenced resources and establishes baseline conformance expectations.
-
+  hl7.fhir.us.core:
+    version: 7.0.0
+    uri: "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
+    id: uscore
+    reason: |
+        Where possible, all profiles in this IG are either derived from US Core 7.0.0 or aligned with that release and future releases as much as possible. U.S. Core also sets expectations for a variety of referenced resources and establishes baseline conformance expectations.
+  hl7.fhir.extensions.r5: 5.2.0
+  hl7.terminology.r4: 6.2.0
+  hl7.fhir.uv.subscriptions-backport: 1.1.0
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
