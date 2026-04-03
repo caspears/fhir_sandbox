@@ -1,0 +1,14 @@
+{
+    "package-id": "fhir.sandbox",
+    "version": "0.1.0",
+    "path": "https://github.com/caspears/fhirsandbox",
+    "mode": "working",
+    "status": "release",
+    "sequence": "R 1",
+    "desc": "Spears FHIR Sandbox IG",
+    "first": true,
+	"category": "Documentation",
+	"title": "Spears FHIR Sandbox IG",
+	"ci-build": "https://github.com/caspears/fhirsandbox/ci",
+	"introduction": "Spears FHIR Sandbox IG"
+}
