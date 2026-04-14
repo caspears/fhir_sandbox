@@ -1,0 +1,17 @@
+{
+    "package-id": "fhir.sandbox",
+    "version": "1.0.0",
+    "path": "http://www.cdc.gov/nhsn/fhirportal/dqm/ig/2.0.0",
+    "mode": "milestone",
+    "status": "release",
+    "sequence": "R 1",
+    "desc": "Corey Spears FHIR Sandbox Implementation Guide",
+    "registry-description" : "Corey Spears FHIR Sandbox Implementation Guide",
+    "registry-country": "US",
+    "registry-authority": "Corey Spears",
+    "first": true,
+	"category": "Public Health",
+	"title": "FHIR Sandbox",
+	"ci-build": "https://github.com/caspears/fhirsandbox",
+	"introduction": "This is a FHIR Sandbox for testing and development purposes. It includes a variety of FHIR resources and profiles to support different use cases. The sandbox is designed to be a safe environment for experimentation and learning."
+}
