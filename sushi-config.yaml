@@ -22,14 +22,17 @@ publisher:
 
 
 dependencies:
-    hl7.fhir.us.core:
-        version: 7.0.0
-        uri: "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
-        id: uscore
-        reason: |
-            Where possible, all profiles in this IG are either derived from US Core 7.0.0 or aligned with that release and future releases as much as possible. U.S. Core also sets expectations for a variety of referenced resources and establishes baseline conformance expectations.
+  hl7.fhir.us.core:
+    version: 7.0.0
+    uri: "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
+    id: uscore
+    reason: |
+      Where possible, all profiles in this IG are either derived from US Core 7.0.0 or aligned with that release and future releases as much as possible. U.S. Core also sets expectations for a variety of referenced resources and establishes baseline conformance expectations.
 
-
+  hl7.terminology.r4:
+    version: 7.1.0
+    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+    id: tho
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
@@ -72,7 +75,8 @@ dependencies:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  path-expansion-params: '../../input/terminology-settings.json'  #Support for US SNOMED CT - path is relative to [base]/fsh-generated/resources
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
